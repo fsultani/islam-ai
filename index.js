@@ -13,8 +13,6 @@ import { formatDocumentsAsString } from "langchain/util/document";
 import readline from 'readline';
 
 /* Initialize the LLM to use to answer the question */
-process.env.OPENAI_API_KEY = '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';
-
 const model = new ChatOpenAI({
   openAIApiKey: process.env.OPENAI_API_KEY,
   modelName: 'gpt-3.5-turbo-1106',
